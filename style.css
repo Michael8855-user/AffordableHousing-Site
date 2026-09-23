@@ -1,0 +1,270 @@
+
+.roboto-uniquifier {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+}
+
+.momo-signature-regular {
+  font-family: "Momo Signature", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.instrument-serif-regular {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.instrument-serif-regular-italic {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+
+* {
+    
+      box-sizing: border-box;
+
+
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: #00203f;
+      font-family: "Roboto", sans-serif;
+    }
+
+    nav{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto;
+        padding-top: 20px ;
+
+    }
+
+    nav h3{
+        color: #36ecde;
+        font-size: 40px;
+        margin-right: 90px;
+        font-family: "Instrument Serif", serif;
+        font-weight: 500;
+        font-style: normal; 
+        
+    }
+
+    nav span{
+        color: #fff;
+        font-size: 20px;
+        font-family: "Roboto";
+        
+    }
+
+    .Dun1 button{
+       width: 150px;
+       height: 40px;
+       outline: none;
+       border: none;
+       border-radius: 5px;
+       background: none;
+       color: #e6e9ec;
+       border: 1px solid #e6e9ec;
+       font-family: "Roboto";
+       cursor: pointer;
+    }
+
+    /*.Dun1 button:hover{
+        border: 1px solid #36ecde;
+        color: #36ecde;
+        border-radius: 20px;
+
+    }*/
+
+    .Marc1 {
+      width: min(530px, 95vw);
+      aspect-ratio: 16 / 9;
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      background: #222;
+      border: 1px solid #36ecde;
+    }
+
+    /* Hide radio buttons */
+    .Marc1 input {
+      display: none;
+    }
+
+    .Marc3 {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.5s ease;
+    }
+
+    .Macklin {
+      min-width: 100%;
+      height: 100%;
+    }
+
+    .Macklin img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    /* Move the slides */
+    #Gem1:checked ~ .Marc3 {
+      transform: translateX(0);
+    }
+
+    #Gem2:checked ~ .Marc3 {
+      transform: translateX(-100%);
+    }
+
+    #Gem3:checked ~ .Marc3 {
+      transform: translateX(-200%);
+    }
+
+    #Gem4:checked ~ .Marc3 {
+      transform: translateX(-300%);
+    }
+
+    #Gem5:checked ~ .Marc3 {
+      transform: translateX(-400%);
+    }
+
+    #Gem6:checked ~ .Marc3 {
+      transform: translateX(-500%);
+    }
+
+    #Gem7:checked ~ .Marc3 {
+      transform: translateX(-600%);
+    }
+
+    /* Marc5 */
+    .Marc5 {
+      position: absolute;
+      bottom: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 30px;
+      background: rgba(0, 0, 0, 0.45);
+    }
+
+    .Marc5 label {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: white;
+      opacity: 0.5;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .Marc5 label:hover {
+      opacity: 1;
+      transform: scale(1.2);
+    }
+
+    /* Highlight active dot */
+    #Gem1:checked ~ .Marc5 label[for="Gem1"],
+    #Gem2:checked ~ .Marc5 label[for="Gem2"],
+    #Gem3:checked ~ .Marc5 label[for="Gem3"],
+    #Gem4:checked ~ .Marc5 label[for="Gem4"],
+    #Gem5:checked ~ .Marc5 label[for="Gem5"],
+    #Gem6:checked ~ .Marc5 label[for="Gem6"],
+    #Gem7:checked ~ .Marc5 label[for="Gem7"]
+    
+    {
+      opacity: 1;
+      background: #36ecde;
+    }
+
+    .Dun3{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Dun3 h1{
+      color: #36ecde;
+      font-family: "Roboto";
+    }
+
+    .Dun3 h3{
+        color: #e6e9ec;
+        margin-top: -17px;
+        font-family: "Roboto";
+    }
+
+    .Dun3 h6{
+        margin-top: -15px;
+        color: #e6e9ec;
+        font-family: "Roboto";
+        font-style: italic;
+        font-size: 12px;
+    }
+
+    .Dun4 h3{
+       text-align: center;
+       color: #36ecde;
+       font-size: 20px;
+    }
+
+    .Dun4 i{
+        font-size: 25px;
+        margin: 5px;
+        margin-bottom: 50px;
+        color: #e6e9ec;
+        cursor: pointer;
+    }
+
+    .Dun4 i:hover{
+      color: #36ecde;
+      transform: scale(1.5);
+    }
+
+
+    /* Smaller screens */
+    @media (max-width: 600px) {
+        
+        nav h3{
+            margin-left: 10px;
+            font-size: 30px;
+        }
+      
+       .Dun1 button{
+        margin-right: 15px;
+      }
+      
+      
+        .Marc3 {
+        width: 100%;
+        border-radius: 0;
+      }
+
+    .Marc1{
+       width: min(430px, 95vw); 
+    }
+
+
+
+      .Marc5 {
+        bottom: 10px;
+      }
+    }
